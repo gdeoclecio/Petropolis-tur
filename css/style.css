@@ -1,0 +1,47 @@
+#lista-locais{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    width: 280px;
+    border-radius: 8px; /*arrednda cantos externos*/
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);/*efeito de sombra*/
+    overflow: hidden; /* se o conteudo ultrapassar o tamanho da caixa, oq passou é ocultado*/
+}
+/* seletor da classe filha de .card*/
+.card img{
+ width: 100%; /*define largura*/
+ height: 200px; /*define altura */
+ object-fit: cover; /*faz a imagem preencher o espaço sem distorcer*/
+}
+.card h2{
+    font-size: 18px; /*tamanho da fonte*/
+    margin: 10px; /*define o espaço externo em volta do elemento*/
+}
+.card p{
+    margin: 0 10px 10px 10px;
+    color: gray; /*cor d fonte*/
+}
+#detalhes img {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: cover;
+}
+/* aparecer botão verde*/
+.botao {
+    border: none;
+    background: linear-gradient( 90deg,#2c7a4b,#1a6b9a);
+    background-size: 200% auto;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-position 0.5s;
+    text-decoration: none; /* remove o sublinhado do link */
+}
+.botao:hover{
+    background-position: right center;
+}

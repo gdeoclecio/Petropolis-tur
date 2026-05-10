@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+@CrossOrigin(origins = "*")//aceita requisições de qualquer origem
 
 // Marca a classe como Controller — recebe requisições HTTP e devolve dados em JSON
 @RestController
@@ -42,6 +43,7 @@ public Local atualizar(@PathVariable Long id, @RequestBody Local local){
 public void deletar (@PathVariable Long id){
     repository.deleteById(id);
 }
+
 }
 
 

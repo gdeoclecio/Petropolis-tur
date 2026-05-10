@@ -31,7 +31,6 @@ cd Petropolis-tur
 # Inicie o servidor local
 npx serve .
 ```
-
 Acesse `http://localhost:3000/pages/index.html` no navegador.
 
 ## Próximas etapas

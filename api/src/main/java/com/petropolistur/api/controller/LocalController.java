@@ -24,6 +24,11 @@ public class LocalController {
      public List<Local> listarTodos() {
        return repository.findAll();// busca todos os registros da tabela locais
 }
+// Busca um local pelo id
+@GetMapping("/{id}")
+public Local buscarPorId(@PathVariable Long id) {
+    return repository.findById(id).orElse(null);
+}
 //Diz que esse método responde quando alguém faz uma requisição POST para /locais — ou seja, quando alguém quer cadastrar um novo local.
 @PostMapping
 public Local cadastrar(@RequestBody Local local) {
